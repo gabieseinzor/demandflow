@@ -1,1 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap");
 @import "tailwindcss";
+
+@theme {
+  /* Primaire */
+  --color-primary-900: #003E5C;
+  --color-primary-700: #005680;
+  --color-primary-300: #80D5FF;
+  --color-primary-100: #D6F2FF;
+
+  /* Neutres */
+  --color-gris: #BDBDBD;
+  --color-gris-clair: #F5F5F5;
+
+  /* Statuts : couleur forte + fond clair */
+  --color-succes: #2E7D32;
+  --color-succes-bg: #E8F5E9;
+  --color-erreur: #D32F2F;
+  --color-erreur-bg: #FDECEA;
+  --color-attention: #B86F00;
+  --color-attention-bg: #FFF3E0;
+  --color-info: #0A71CF;
+  --color-info-bg: #E3F2FD;
+  --color-neutre: #757575;
+  --color-neutre-bg: #F5F5F5;
+
+  /* Polices */
+  --font-titre: "Poppins", sans-serif;
+  --font-texte: "Roboto", sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-texte);
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-titre);
+  }
+}
