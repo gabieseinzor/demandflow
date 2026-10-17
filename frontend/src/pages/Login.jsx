@@ -27,11 +27,8 @@ function Login() {
 
   return (
     // formulaire de connexion à l'application
-    <form
-      onSubmit={handleSubmit}
-      className="max-w-sm mx-auto mt-16 p-6 border border-gris rounded-lg "
-    >
-      <h1 className="text-2xl font-bold mb-4 text-primary-900">{title}</h1>
+    <form onSubmit={handleSubmit} className="">
+      <h1 className="text-2xl font-bold mb-8 text-black">{title}</h1>
       <label htmlFor={emailInputId} className="mb-2 block text-sm">
         E-mail
       </label>
