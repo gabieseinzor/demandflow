@@ -1,28 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap");
 @import "tailwindcss";
+@plugin "daisyui";
 
 @theme {
   /* Primaire */
-  --color-primary-900: #003E5C;
+  --color-primary-900: #003e5c;
   --color-primary-700: #005680;
-  --color-primary-300: #80D5FF;
-  --color-primary-100: #D6F2FF;
+  --color-primary-300: #80d5ff;
+  --color-primary-100: #d6f2ff;
 
   /* Neutres */
-  --color-gris: #BDBDBD;
-  --color-gris-clair: #F5F5F5;
+  --color-gris: #bdbdbd;
+  --color-gris-clair: #f5f5f5;
 
   /* Statuts : couleur forte + fond clair */
-  --color-succes: #2E7D32;
-  --color-succes-bg: #E8F5E9;
-  --color-erreur: #D32F2F;
-  --color-erreur-bg: #FDECEA;
-  --color-attention: #B86F00;
-  --color-attention-bg: #FFF3E0;
-  --color-info: #0A71CF;
-  --color-info-bg: #E3F2FD;
+  --color-succes: #2e7d32;
+  --color-succes-bg: #e8f5e9;
+  --color-erreur: #d32f2f;
+  --color-erreur-bg: #fdecea;
+  --color-attention: #b86f00;
+  --color-attention-bg: #fff3e0;
+  --color-info: #0a71cf;
+  --color-info-bg: #e3f2fd;
   --color-neutre: #757575;
-  --color-neutre-bg: #F5F5F5;
+  --color-neutre-bg: #f5f5f5;
 
   /* Polices */
   --font-titre: "Poppins", sans-serif;
@@ -33,7 +34,11 @@
   body {
     font-family: var(--font-texte);
   }
-  h1, h2, h3, h4, h5 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     font-family: var(--font-titre);
   }
 }
