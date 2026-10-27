@@ -1,5 +1,6 @@
 import { useId, useState } from "react";
 import InputField from "../components/InputField";
+// import { Eye } from "lucide-react";
 
 // fonction de création du formulaire de connexion
 function Login() {
@@ -54,6 +55,7 @@ function Login() {
           {error}
         </p>
       )}
+
       <button
         type="submit"
         className="w-full bg-primary-700 text-white rounded p-2"
@@ -61,7 +63,7 @@ function Login() {
         Se connecter
       </button>
     </form>
-  );
+  ); 
 }
 
 export default Login;
