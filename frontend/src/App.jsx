@@ -1,8 +1,8 @@
-import LoginPage from "./pages/LoginPage";
-//import Layout from "./pages/Layout";
+import AppLayout from "./components/layout/AppLayout";
+//import LoginPage from "./pages/LoginPage";
 
 function App() {
-  return <LoginPage />;
-  //return <Layout />;
+  //return <LoginPage />;
+  return <AppLayout />;
 }
 export default App;
