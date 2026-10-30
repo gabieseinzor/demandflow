@@ -1,6 +1,11 @@
-import { NavLink, Link } from "react-router";
+import { NavLink, Link, useNavigate } from "react-router";
 import logo from "../../assets/logo.png";
-import { ChartColumnBig, ClipboardList, FilePlusCorner } from "lucide-react";
+import {
+  ChartColumnBig,
+  ClipboardList,
+  FilePlusCorner,
+  LogOut,
+} from "lucide-react";
 
 const linkClass = ({ isActive }) => {
   return (
@@ -9,6 +14,7 @@ const linkClass = ({ isActive }) => {
   );
 };
 function Sidebar() {
+  const navigate = useNavigate();
   return (
     <aside className="flex flex-col w-64 p-6 gap-4">
       <Link to="/">
@@ -26,7 +32,16 @@ function Sidebar() {
         <FilePlusCorner size={20} aria-hidden="true" />
         Nouvelle demande
       </NavLink>
+      <button
+        type="button"
+        onClick={() => navigate("/login")}
+        className="flex items-center gap-3 rounded px-4 py-2 w-full text-left hover:bg-primary-100"
+      >
+        <LogOut size={20} aria-hidden="true" />
+        Déconnexion
+      </button>
     </aside>
   );
 }
+
 export default Sidebar;
